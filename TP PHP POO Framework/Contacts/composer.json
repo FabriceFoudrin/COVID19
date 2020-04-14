@@ -1,0 +1,19 @@
+{
+    "name": "vendor/contacts",
+    "description": "TP MALEN.",
+    "authors": [
+        {
+            "name": "Fabrice",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "filp/whoops": "dev-master"
+    },
+    "autoload": {
+      "psr-4": {
+            "App\\": "app/",
+            "System\\": "app/system/"
+      }  
+    }
+}
