@@ -20,7 +20,7 @@ public class Person
 
 
 
-    /** constructeur par defaut
+    /** Default construct
      *
      */
     public Person(){
@@ -33,18 +33,21 @@ public class Person
      * @param prenom
      * @param notes
      */
-    public Person(String nom, String prenom, String notes){
+    public Person(String nom, String prenom, String notes)
+	{
         setFirstname(nom);
         setSurname(prenom);
         setNotes(notes);
     }
 
     // Setters and Getters
-    public String getFirstname() {
+    public String getFirstname() 
+	{
         return firstname.get();
     }
 
-    public StringProperty firstnameProperty() {
+    public StringProperty firstnameProperty() 
+	{
         return firstname;
     }
 
@@ -52,33 +55,40 @@ public class Person
         this.firstname.set(firstname);
     }
 
-    public String getSurname() {
+    public String getSurname() 
+	{
         return surname.get();
     }
 
-    public StringProperty surnameProperty() {
+    public StringProperty surnameProperty() 
+	{
         return surname;
     }
 
-    public void setSurname(String surname) {
+    public void setSurname(String surname) 
+	{
         this.surname.set(surname);
     }
 
-    public String getNotes() {
+    public String getNotes() 
+	{
         return notes.get();
     }
 
-    public StringProperty notesProperty() {
+    public StringProperty notesProperty() 
+	{
         return notes;
     }
 
-    public void setNotes(String notes) {
+    public void setNotes(String notes) 
+	{
         this.notes.set(notes);
     }
 
 
     @Override
-    public String toString() {
+    public String toString() 
+	{
         return "Person{" +
                 "firstname=" + firstname +
                 ", surname=" + surname +
@@ -86,7 +96,8 @@ public class Person
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) 
+	{
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
@@ -95,7 +106,8 @@ public class Person
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode() 
+	{
         return Objects.hash(firstname, surname);
     }
 
